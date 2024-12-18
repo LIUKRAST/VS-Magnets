@@ -44,7 +44,7 @@ public class MagneticField implements ShipForcesInducer {
         for(Magnet magnet : magnetPoles) {
             for(MagneticField other : FIELDS) {
                 if(other == this) continue;
-
+                //TODO
                 physShip.applyInvariantForceToPos(new Vector3d(0, 1, 0), new Vector3d(magnet.pos()).add(0.5, 0.5, 0.5));
             }
         }
