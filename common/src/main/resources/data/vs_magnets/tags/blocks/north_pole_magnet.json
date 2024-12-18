@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "vs_magnets:north_pole_magnet",
+    {"id": "idk","required": false}
+  ]
+}

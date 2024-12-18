@@ -61,7 +61,7 @@ dependencies {
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 
     // Kotlin for Forge
-    implementation "thedarkcolour:kotlinforforge:$forge_kotlin_version"
+    //implementation "thedarkcolour:kotlinforforge:$forge_kotlin_version"
 }
 
 processResources {

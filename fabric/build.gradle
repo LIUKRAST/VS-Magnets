@@ -31,6 +31,10 @@ dependencies {
     // Architectury API
     include(modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}")
 
+    //Indium
+    //TODO: Find a way to change the damn sodium version
+    //modImplementation "curse.maven:indium-459496:5493195"
+
     // Mod menu
     modImplementation("com.terraformersmc:modmenu:3.2.3")
     modImplementation("me.shedaniel.cloth:cloth-config:${cloth_config_version}")

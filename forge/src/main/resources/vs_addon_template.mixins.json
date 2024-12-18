@@ -1,8 +1,7 @@
 {
   "required": true,
-  "package": "io.github.techtastic.vs_addon_template.forge.mixin",
+  "package": "net.frozenblock.vs_magnets.forge.mixin",
   "compatibilityLevel": "JAVA_17",
-  "plugin": "io.github.techtastic.vs_addon_template.forge.mixin.ValkyrienForgeMixinConfigPlugin",
   "mixins": [],
   "injectors": {
     "defaultRequire": 1

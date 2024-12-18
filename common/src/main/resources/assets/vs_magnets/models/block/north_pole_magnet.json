@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "vs_magnets:block/north_pole_magnet"
+  }
+}

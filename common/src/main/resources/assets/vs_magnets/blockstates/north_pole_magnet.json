@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "vs_magnets:block/north_pole_magnet"
+    }
+  }
+}
