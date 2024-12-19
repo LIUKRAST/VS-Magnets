@@ -42,11 +42,20 @@ public class MagneticField implements ShipForcesInducer {
     @Override
     public void applyForces(@NotNull PhysShip physShip) {
         for(Magnet magnet : magnetPoles) {
-            for(MagneticField other : FIELDS) {
-                if(other == this) continue;
-                //TODO
-                physShip.applyInvariantForceToPos(new Vector3d(0, 1, 0), new Vector3d(magnet.pos()).add(0.5, 0.5, 0.5));
+            boolean thisNorth = magnet.north();
+            Vector3d forceResult = new Vector3d();
+            for(MagneticField otherField : FIELDS) {
+                if(otherField == this) continue;
+                for(Magnet other : otherField.magnetPoles) {
+                    int side = other.north() == thisNorth ? 1 : -1;
+                    double force = 1d / magnet.pos().distanceSquared(other.pos()) * side;
+                    Vector3d b =other.doublePos().sub(magnet.doublePos());
+                    b.div(b.length()).mul(force);
+                    forceResult.add(b);
+                }
             }
+            physShip.applyInvariantForceToPos(forceResult.mul(VSMagnets.MAGNETIC_FORCE_INTENSITY), new Vector3d(magnet.pos()).add(0.5, 0.5, 0.5));
+
         }
     }
 

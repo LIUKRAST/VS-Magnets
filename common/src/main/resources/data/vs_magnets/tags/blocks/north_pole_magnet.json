@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "vs_magnets:north_pole_magnet",
-    {"id": "idk","required": false}
+    {"id": "alexscaves:scarlet_magnet","required": false},
+    {"id": "alexscaves:scarlet_neodymium_pillar","required": false},
+    {"id": "alexscaves:scarlet_neodymium_node","required": false}
   ]
 }

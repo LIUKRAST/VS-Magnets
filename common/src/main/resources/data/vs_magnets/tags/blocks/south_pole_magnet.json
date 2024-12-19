@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "vs_magnets:south_pole_magnet"
+    "vs_magnets:south_pole_magnet",
+    {"id": "alexscaves:azure_magnet","required": false},
+    {"id": "alexscaves:azure_neodymium_pillar","required": false},
+    {"id": "alexscaves:azure_neodymium_node","required": false}
   ]
 }
